@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <Title>My HTML notes</Title>
+    
+</head>
+
+<body>
+
+<h1>
+    My HTML Notes:
+</h1>
+
+
+<h2>
+    <strong>Markup</strong> 
+</h2>
+
+<p>
+    -<em>markup</em> is plaintext that has a special meaning. 
+    Tags tell the browser how to display text. e.g. "< em >markup< /em >"
+</p>
+
+<P>
+  -sub element does <sub>this.</sub>
+</P>        
+ 
+
+
+<p>
+    -sup element does  <sup>this.</sup>
+</p> 
+
+<p>
+    -useful for math and chemistry i.e. x<sup>3</sup>+2x<sup>2</sup> or H<sub>2</sub>O
+</p>
+
+<p>
+    -the mark element <mark>highlights</mark> things.
+</p>
+
+<div>   
+    <h2>
+        <strong>Lists</strong>
+    </h2>
+
+    <p>
+        <em>-Lists</em> can be implemented using the < li > tag as <mark>ordered</mark> lists < ol >, or <mark>unordered</mark> lists < ul>.
+            <br><br>
+        the li tag must be nested in a ul or ol tag. 
+    </p>
+
+    <p>
+        <strong>example:</strong> 
+            <br>
+        An unordered list of groceries.
+    </p>
+        <ul>
+            <li>bananas</li>
+            <li>milk</li>
+            <li>cereal</li>
+        </ul>
+            <br>
+        An ordered list of the best ice cream.
+
+        <ol>
+            <li>cookie dough</li>
+            <li>choc chip</li>
+            <li>mint</li>
+        </ol>
+    
+
+    <p>
+        ordered lists can be nested within each other as well:
+    </p>
+        <ul>
+            <li>Mammals</li>
+                <ol>
+                    <li>Racoons</li>
+                    <li>Gorillas</li>
+                </ol>
+        </ul>
+   
+</div>
+
+<div>
+    <h2>
+        <strong>Links and the < a > tag.</strong>
+    </h2>
+
+    <p>
+        syntax to link to a website is <a href="https://www.thrashermagazine.com"> thrasher magazine</a>
+        <br><br>
+        A link must contain:
+     </p>    
+        <ol>
+            <li> opening < a > tag</li>
+            <li>href= (hypertext reference)</li>
+            <li>Link description</li>
+            <li>closing </ a > tag</li>
+        </ol>
+   
+</div>    
+    
+<div>
+    <h2>
+        <strong>Linking Images:</strong>
+    </h2>
+
+    <p>
+        Linking an image requires:
+    </p>
+        <ol>
+            <li>< img src= > tag</li>
+            <li>"image location"</li>
+            <li> alt= tag</li>
+                <ul>
+                    <li> the alt tag tells the browser what to display if it can't find the image.</li>
+                </ul>
+        </ol>
+        <br><br>
+
+        <strong>Example:</strong>
+        <br><br>
+
+        <img src="https://static01.nyt.com/images/2012/10/28/magazine/wmt_fistbump-slide-LHD4/wmt_fistbump-slide-LHD4-superJumbo.jpg" alt="Fistbump" height="200"/>
+    
+
+    <p>
+        You can also use an image to link to another website by nesting an < img src > tag in an < a > tag.
+        
+        <br><br>
+        <strong>Example:</strong>
+        <br><br>
+
+        <a href="https://www.thrashermagazine.com"> <img src="https://1000logos.net/wp-content/uploads/2018/03/Font-Thrasher-Logo.jpg" alt="thrasher" height="200"/></a>
+        <br>
+        This image links to the thrasher magazine website. (check code editor for correct syntax.)
+
+    </p>
+
+    <p>
+        If you want to add an image with the same directory as your
+        html file, you must use its relative path or else the image will not
+        show up on another computer.
+    </p>
+
+    <p>
+        <strong>Example:</strong>
+        <br><br>
+
+        <img src="Udacity/IMG/galaxy.jpg" alt="galaxy" height="200"/>
+        <br>
+        (check code editor for proper syntax)
+    </p>
+
+</div>
+
+<div>
+    <h2>
+        <strong>Documents: Head and Body</strong>
+    </h2>
+
+    <p>
+        To publish a full HTML document you need:
+
+        <ol>
+            <li> a <strong> < !DOCTYPE html ></strong> tag</li>
+                <ul>
+                    <li>This tells the browser that it is loading HTML</li>
+                </ul>
+            <li>an <strong>< html ></strong> tag </li>
+                <ul>
+                    <li>Html tags encompass all other tags</li>
+                    <li>you can include "lang="en" to tell the browser to read with english language.</li>
+                </ul>
+                
+            <li>a <strong>< head ></strong> tag. Head tags contain things like:</li>
+                <ul>
+                    <li>stylesheets in CSS</li>
+                    <li>Script in javascript</li>
+                    <li>metadata for search engines</li>
+                </ul>
+            <li> a <strong>< title ></strong> tag </li>
+                <ul>
+                    <li>the <em>title tag</em> is contained within the <em>head tag</em></li>
+                </ul>
+            <li>a <strong>< body > tag</strong></li>
+                <ul>
+                    <li>All other content is contained within the <em>body tags</em></li>
+                </ul>
+        </ol>
+    </p>
+</div>
+
+</body>
+
+</html>
