@@ -4,68 +4,40 @@
 
 <head>
     <Title>My HTML notes</Title>
+    <link rel="stylesheet"
+     href="style.css">
 </head>
 
 <body>
 
-<style>
-    .markup {background-color: khaki;}
-    
-    .lists {background-color: cadetblue;}
 
-    .links {background-color: skyblue;}
-
-    .linking_images {background-color: peachpuff;}
-
-    .documents {background-color: lightseagreen;}
-
-    .styling {background-color: moccasin;}
-</style>
 
 <div class="markup">
 
-    <h1>
-        My HTML Notes:
-    </h1>
+    <h1>My HTML Notes:</h1>
 
+    <h2><strong>Markup</strong> </h2>
 
-    <h2>
-        <strong>Markup</strong> 
-    </h2>
+    <p>-<em>markup</em> is plaintext that has a special meaning. 
+        Tags tell the browser how to display text. e.g. "< em >markup< /em >"</p>
 
-    <p>
-        -<em>markup</em> is plaintext that has a special meaning. 
-        Tags tell the browser how to display text. e.g. "< em >markup< /em >"
-    </p>
-
-    <P>
-        -sub element does <sub>this.</sub>
-    </P>        
+    <P>-sub element does <sub>this.</sub></P>        
  
-    <p>
-        -sup element does  <sup>this.</sup>
-    </p> 
+    <p>-sup element does  <sup>this.</sup></p> 
 
-    <p>
-        -useful for math and chemistry i.e. x<sup>3</sup>+2x<sup>2</sup> or H<sub>2</sub>O
-    </p>
+    <p>-useful for math and chemistry i.e. x<sup>3</sup>+2x<sup>2</sup> or H<sub>2</sub>O</p>
 
-    <p>
-        -the mark element <mark>highlights</mark> things.
-    </p>
+    <p>-the mark element <mark>highlights</mark> things.</p>
 
 </div>
 
 <div class="lists">   
-    <h2>
-        <strong>Lists</strong>
-    </h2>
+    
+    <h2><strong>Lists</strong></h2>
 
-    <p>
-        <em>-Lists</em> can be implemented using the < li > tag as <mark>ordered</mark> lists < ol >, or <mark>unordered</mark> lists < ul>.
+    <p><em>-Lists</em> can be implemented using the < li > tag as <mark>ordered</mark> lists < ol >, or <mark>unordered</mark> lists < ul>.
             <br><br>
-        the li tag must be nested in a ul or ol tag. 
-    </p>
+        the li tag must be nested in a ul or ol tag.</p>
 
     <p>
         <strong>example:</strong> 
@@ -136,12 +108,12 @@
                 </ul>
         </ol>
         <br><br>
-
+    <div class="fistbumpexample">
         <strong>Example:</strong>
         <br><br>
 
         <img src="https://static01.nyt.com/images/2012/10/28/magazine/wmt_fistbump-slide-LHD4/wmt_fistbump-slide-LHD4-superJumbo.jpg" alt="Fistbump" height="200"/>
-    
+    </div>
 
     <p>
         You can also use an image to link to another website by nesting an < img src > tag in an < a > tag.
@@ -211,7 +183,12 @@
     
 </div>
 
+<h1 class="css">
+    <strong>-----CSS-----</strong>
+</h1>
+
 <div class="styling">
+
 <H2>
     <strong>Styling</strong>
 </H2>
@@ -231,18 +208,223 @@
     <em>Example:</em> <mark>style="color: blue; text-align: center";</mark>
 </p>
 
+
+
 <p>
     A more efficient way of styling is using <strong>Style elements</strong>
     <br><br>
-    <strong>Style elements</strong> are used to style multiple elements at a time.
-
+    <strong>Style elements</strong> are used with <em><mark>selectors</mark></em> to style multiple elements at a time. 
+    <br><br>
+    
+    For instance, if you want to style all h2 elements with the same font you would create an opening and closing "style " tag that contains <em>"h2 {font-style:"comic sans"}"</em>
 </p>
 
 
+</div>
 
+<div class="selectors">
 
+    <h2>
+        <strong>Selectors</strong>
+    </h2>
+
+    <p>
+        <strong>Class selectors</strong> work the same way style elements use selectors to style multiple elements at a time.
+         Say you want to change the color of everything contained in a single < p > tag, while leaving other < p > tags alone. You can insert <em><mark>class="class_name"</mark></em>
+         into the < p > tag, then create a "stlye" tag containing <mark>.class_selector { color:'red'}</mark>
+    </p>
+
+    <p>
+        <strong>id selectors</strong> work in the same way, but only when a single element needs styling. instead of a "." to reference an id selector, it uses a "#"
+    </p>
+
+    <p>
+        You can also combine selectors by using <strong>descendant selectors</strong>. For instance, if you want to style all < em > tags within an < li > tag, you would use <em><mark>li em {color: red;}</mark></em>
+    </p>
+
+    <P>
+        You can even combine selector by simply including both class names after "class=". example:
+    </P>
 
 </div>
+
+<div>
+    
+    <h2><strong>Units of Measurement.</strong></h2>
+
+    <ol>
+        <li>Pixels</li>
+            <ul>
+                <li><em>"px"</em> abreviated</li>
+                <li>defined as 1/96<sup>th</sup> of an inch</li>
+            </ul>
+        <li>Points</li>
+            <ul>
+                <li>abreviated as <em>"pt"</em></li>
+                <li>Defined as 1/72<sup>nd</sup></li>
+            </ul>
+        <li>Em</li>
+            <ul>
+                <li>One em is equal to the font size of the text in the element.</li>
+                <li>If the element font is 20pt, then 1em=20pt. Therefor, .5em=10pt in that particular element.</li>
+            </ul>
+    </ol>
+</div>
+
+<div id="boxes">
+    <h2>
+        <strong>Boxes</strong>
+    </h2>
+
+    <img id="box-model" src="IMG/css-box-model.png" alt="Box Model" height="400"/>
+
+    <p>The <em>box model</em> uses invisible boxes to position elements on the screen.</p>
+</div>
+
+<div class="separating-style">
+
+    <h2><strong>Separating Style</strong></h2>
+
+    <p>Using style elements can be messy. A better way to keep style code organized is to link to a style sheet.</p>
+
+    <p>You can create a seperate .css file and link it to your HTML file with <mark>"link rel="stylesheet" href="style.css""</mark> within the "head" tag at the top.</p>
+</div>
+
+<div class="searching for properties">
+
+    <h2><strong>Searching for Properties</strong></h2>
+
+    <p>There are so many CSS properties out there, it's difficult to know (or remember) them all! And even if you do remember the property you want, you may not be able to recall the exact syntax. (Was it text-align: center; or text-align: centered;?
+
+        Even experienced developers don't have every single property memorized. Fortunately, it's usually easy to find what you need by looking it up in the documentation or using your favorite search engine.
+        
+        Most of the time, you can simply type in "CSS", followed by some words related to the property. For example, if you want to know how to set the background color, searching for "css background color" will turn up the results you're looking for.
+        
+        And as we've mentioned previously, the There are so many CSS properties out there, it's difficult to know (or remember) them all! And even if you do remember the property you want, you may not be able to recall the exact syntax. (Was it text-align: center; or text-align: centered;?
+
+        Even experienced developers don't have every single property memorized. Fortunately, it's usually easy to find what you need by looking it up in the documentation or using your favorite search engine.
+        
+        Most of the time, you can simply type in "CSS", followed by some words related to the property. For example, if you want to know how to set the background color, searching for "css background color" will turn up the results you're looking for.
+        
+        And as we've mentioned previously, the <a id="mozilla-link"  href="https://developer.mozilla.org/en-US/"> <strong>Mozilla Developer Network</strong></a> is a good resource to keep in mind (it also has a search option you can check out).</p>
+</div>
+
+<div class="fonts">
+    
+    <h2><strong>Fonts</strong></h2>
+
+    <p>To style an element with a specific font, use <em><mark>font-family: font name;</mark></em>.</p>
+
+    <p>When choosing a font, it's important to choose fallback fonts incase the browser doesn't support your first font choice</p>
+
+    <p>For example: <em>font-family:constantia, georgia, sans-serif:</em> will tell the browser to display "georgia" if it can't find "constantia", and the generic font family, "sans-serif", if it can't find georgia.</p>
+    
+    <p>Here are some common fonts you can try:</p>
+    
+    <ul>
+        <li>Helvetica</li>
+        <li>"Times New Roman"</li>
+            <ul class="font-notes">
+                <li>Note: If a font contains spaces in it, we put the name inside quotes 
+                    (to make sure the browswe sees it as a single font name, rather than multiple words.)
+                </li>
+            </ul>
+        <li>Courier</li>
+        <li>Palatino</li>
+        <li>Impact</li>
+    </ul>
+
+    <p>You can also try out the five <strong>generic</strong> font families</p>
+
+    <ul>
+        <li>serif</li>
+        <li>sans-serif</li>
+        <li>cursive</li>
+        <li>fantasy</li>
+        <li>monospace</li>
+    </ul>
+
+    <p>Remember, when you use a generic font family, this tells the browser "get me this general kind of font". 
+        For example, if you tell it to use font-family: monospace, it might use Inconsolata or Courier New 
+        (because these are both categorized as monospace fonts).</p>
+
+    <p>Here are some other properties to further style your font:
+
+        <ul>
+            <li>font-size:</li>
+            <li>font-weight: <strong>bold</strong></li>
+            <li>font-style: <em>italic</em></li>
+            <li>text-decoration: <u>underline</u></li>
+        </ul>
+    </p>
+    
+    <p><strong><u>Note:</u></strong> We can combine all of this styling info into one declaration, by using the short-hand <mark><em>font:</em></mark> property. This can be very convenient! </p>
+
+    <p>What's not so convenient is that the values for the font property have to be in a certain specific order or they won't work. This is a great example of why it's important to get comfortable looking things up in the documentation.</p>
+
+    <p>If you do a Google search for "CSS font property" or "CSS font property order", one of the top hits you'll get is <a href="https://css-tricks.com/almanac/properties/f/font/"> this handy page from the CSS-Tricks website,</a>. It describes the common "gotchas" that you'll encounter with the font property. </p>
+
+    <p><strong>Try Google Web Fonts</strong></p>
+
+    <p>Take a look at the documentation for <a href="https://developers.google.com/fonts/docs/getting_started"> Google Web Fonts</a></p>
+
+    <p>You'll see there's some example code provided—copy it and paste it into the workspace. Then, 
+        try editing the code so that it uses a different Google Web Font (the documentation will tell you what to change).
+        You can find all the available fonts at <a href="https://fonts.google.com/"> https://fonts.google.com/</a></p>
+
+</div>
+
+<div class="flexbox">
+
+    <h2><strong>Flexible Box Model, "Flexbox"</strong></h2>
+
+    <br><br>
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"> MDN web docs: basic concepts of flexbox </a>
+
+    <p>When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.</p>
+
+    <p><strong>The main axis</strong> is defined by <em>flex direction</em>, which has four possible values:</p>
+
+    <ul>
+        <li>row</li>
+        <li>row-reverse</li>
+        <li>column</li>
+        <li>column-reverse</li>
+    </ul>
+
+    <div class="rowleft">
+        <p>Should you choose <em>row</em> or <em>row-reverse</em>, your main axis will run along the row in the <strong>inline direction</strong>.</p>
+
+        <div >
+            <img class="fleximg" src="IMG/flex-direction.png" alt="flex direction example">
+        </div>
+    
+    </div>
+
+    <div class="rowright">
+        <p>Choose <em>column</em> or <em>column-reverse</em> and your main axis will run from the top of the page to the bottom in the <strong>block direction.</strong></p>
+
+        <div class="fleximg">
+            <img src="IMG/Block-direction.png" alt="box direction example">
+        </div>
+    </div>
+    
+    
+    <p><strong>The cross axis</strong> runs perpendicular to the main axis, therefore if your <em>flex-direction</em> (main axis) is set to <em>row</em> or <em>row-reverse</em>, the cross axis runs down the columns.</p>
+
+    <div >
+        <img class="fleximg" src="IMG/crossaxisrow.png" alt="cross axis: row">
+    </div>
+
+    <p>If your main axis is <em>column</em> or <em>column-reverse</em>, then the cross axis runs along the rows.</p>
+
+    <div >
+        <img class="fleximg" src="IMG/crossaxiscolumn.png" alt="cross axis: column">
+    </div>
+
+</div>
+
 
 </body>
 

@@ -1,0 +1,68 @@
+
+    body {
+        background-color: rgb(224, 235, 235);
+
+        font-family: Constantia, Georgia, sans-serif ;
+
+    
+    }
+    
+    .markup {background-color: khaki;}
+    
+    .lists {background-color: cadetblue;
+    
+            font-family: Arial, Helvetica, sans-serif;}
+
+    .links {background-color: skyblue;
+        
+    }
+
+    .linking_images {background-color: peachpuff;}
+
+    .fistbumpexample {
+       
+    }
+
+    .documents {background-color: lightseagreen;}
+
+    .styling {background-color: moccasin;}
+
+    .css {background-color: slategrey;
+            
+        text-align:center;
+        }
+    
+   #mozilla-link {
+       color: salmon;
+   }
+
+
+    .font-notes {list-style-type:square;}
+
+    h2 {text-align: center;
+        
+        background-color: darkslategrey;
+
+        color: linen;
+
+        width: 90%;
+
+        margin: auto;
+
+        
+    }
+
+    .fleximg {
+
+        padding: 10px;
+
+        border: 5px solid darkslategray;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+
+    }
+
+    
