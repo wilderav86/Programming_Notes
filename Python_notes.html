@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>My Python Notes</title>
+    <link rel="stylesheet" href="pythonstyle.css">
+</head>
+
+<body>
+    
+        <h1><strong>Starting Out</strong></h1>
+
+        <div class="vocab"></div>
+            <p>Vocab:</p>
+
+            <ol>
+                <li><span><strong>Program</strong></span>: A set of instructions for the computer to follow</li>
+            
+                <li><span><strong>Variable</strong></span>: A connection between a name in the code and some data in the computer"s memory.</li>
+                    <ul>
+                        <li>An example of a variable is: <mark>fred = turtle.Turtle()</mark>. </li>
+                    </ul>
+            
+                <li><span><strong>Turtle</strong></span>: A <em>data object</em> that knows how to draw lines on the screen.</li>
+            
+                <li><span><strong>String</strong></span>: In the following lines of code, "green" is a string.
+            <br>
+                
+                    <div class="stringcode"><mark>
+                        import turtle
+                        <br>
+                        amy = turtle.Turtle()
+                        <br>
+                        amy.color("green")
+                        <br>
+                        for side in [1, 2, 3, 4]:</mark>
+                        <br>
+                            <div class=tabs><mark>
+                                amy.forward(100)</mark>
+                                <br>    
+                    </div>
+                        <div class=tabs>
+                            <mark>amy.right(90)</mark>
+                        </div>
+                
+                The term string comes from the idea that these bits of code are strings (that is, sequences) of characters—in other words, we would say that a piece of code like <em>"green"</em> is a string of characters. <mark>strings must be enclosed in quotation marks or python will not recognize them.</mark>
+            </li>
+            <li><span><strong>Integer</strong></span>: A whole number with no fraction or decimal part.</li>
+            <li><span><strong>Module</strong></span>: A file that has a collection of useful code that can be used in other Python programs.</li>
+                <ul>
+                    <li>Modules must be imported. For instance, if we wanted to import a math module we would use the line: <mark>import math</mark>.</li>
+                </ul>
+            <li><span><strong>Comment</strong></span>: You can write a comment in your code by using the # symbol. comments will not be recognized by the program as code. ex. <em># this is a comment.</em></li>
+                <ul>
+                    <li>You can use comments to temporarily turn off a line of code so it doesn't run.</li>
+                </ul>
+            
+            </ol>
+        </div>
+!todo python part 1
+    
+        <h1><strong>Python Part 2</strong></h1>
+        <div>
+            <h2><strong>The Input Fuction</strong></h2>
+
+            <p>
+                <mark> input</mark> and <mark> print</mark> are examples of what we would call <em>built-in</em> functions-- funtions that are built into python.
+                In other words, these functions come with python when you install it.
+            </p>
+            <p>
+                <mark>Input</mark> allows the program to receive input from the user and do something with that response.
+            </p>
+            <p>
+                Example:
+            </p>
+            <ul>
+                <li>This code will ask the user their name then print it with "greetings"
+                    <br>
+                    <em>name = input("whats your name?)</em>
+                    <br>
+                    <em>print("greetings")</em></li>
+            </ul>
+            <p>
+                
+            </p>
+
+
+
+        </div>
+        <div>
+            <h2><strong>The int function</strong></h2>
+
+            <p>
+                This takes the string returned by the input function, and passes it to the int function. The int function takes that string and converts it to an integer.
+            </p>
+            <br><br>
+            <P>
+                example:
+                <br>
+                <mark>n = int(input("Please enter a number:"))
+                <br>
+                Please enter a number: 4
+                <br>
+                n + 2
+                </mark>
+                <br><br>
+                This will turn the value that we stored in "n" into an integer. If the "int" function was not used, "n" would be recognized as a string and throw an error.
+            </P>
+        </div>
+        <div>
+            <h2><strong> The Len Function</strong></h2>
+
+            <p>
+                The len function counts the number of characters in a string.
+                <br><br>
+                example:
+                <br>
+                <mark>word = "python"
+                <br>
+                len(word)
+                </mark>
+                <br>This line of code will give you the integer "6" because there are 6 characters in the word "python"
+            </p>
+            <p>
+                The len funtcion can also count the number of items in a string.
+                <br><br>
+                example:
+                <br>
+                <mark>len([3, 4, 5])</mark>  
+                <br>
+                This will give you the integer "3", since there are 3 items in the list.
+
+            </p>
+        </div>
+        <div class="while_loops">
+            <h2><strong>While Loops</strong></h2>
+            <p>
+                A <em>while loop</em> will continue to run while some condition is true. As soon as the condition is false, the loop will stop.
+            </p>
+            <p><strong>Example:</strong></p>
+            <ul>
+                <li>
+                    n = 1
+                    <br>
+                    while n < 3:
+                    <br>
+                    ___print(n)
+                    <br>
+                    ___n += 1
+                </li>
+            </ul>
+            <p>
+                Before the loop, we set 'n' to a starting number: <em>n = 1</em>
+                <br><br>
+                Then we check is 'n' is less than 3: <em>while n < 3:</em>
+                <br><br>
+                The current value if 'n' is 1, so this means that 'n < 3' evaluates to True.
+                <br>
+                so the code inside the while loop will run.
+                <br><br>
+                Inside the loop, we first print the value of 'n', and then we increase 'n' by 1: <em>n += 1</em>
+                <br><br>
+                Then, we go back to the top of the loop and do the while thing over again. And we keep repeating this process until the value of 'n' gets large enough that 'n < 3' evaluates to False--at which point the loop stops running.
+            </p>
+
+
+
+        </div>
+
+    
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

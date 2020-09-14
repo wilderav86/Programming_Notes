@@ -1,0 +1,64 @@
+.containerouter {
+    height: 675px;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888888;
+    background-color: rgb(247, 235, 195);
+    padding: 5px;
+
+}
+
+.containerinner {
+    height: 670px;
+    width: 445px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color:#E5EFED;
+}
+
+h3{
+    padding-left: 0.5em;
+    padding-top: 0.5;
+    background-color: rgb(247, 235, 195);
+    border: 2px groove black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Alata', sans-serif;
+}
+
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border:5px groove black;
+}
+
+.facts {
+    width: 375px;
+    height: 235px;
+    border:2px groove darkslategrey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    padding: 1%;
+    background-image: url("factsbackground2.jpg");
+    background-size: cover;
+    text-shadow: 1px 1px #ffffff;
+    font-family: 'Alata', sans-serif;
+    font-size: 10pt;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+
