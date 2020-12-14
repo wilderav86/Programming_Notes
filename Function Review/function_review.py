@@ -268,7 +268,7 @@ def locate_all(string, target):
 # Here are a couple function calls to test with.
 
 # This one should return 1
-#print(locate_all('cookbook', 'ook'))
+print(locate_all('cookbook', 'ook'))
 
 # This one should return -1
 #print(locate_all('all your bass are belong to us', 'base'))
@@ -326,5 +326,88 @@ def replace_substring(string, substring, replacement):
     return "".join(output)
 
 # Here are some examples you can test it with:
-print(replace_substring('Hot SPAM!drop soup, and curry with SPAM!plant.', 'SPAM!', 'egg'))
-print(replace_substring("The word 'definately' is definately often misspelled.", 'definately', 'definitely'))
+#print(replace_substring('Hot SPAM!drop soup, and curry with SPAM!plant.', 'SPAM!', 'egg'))
+#print(replace_substring("The word 'definately' is definately often misspelled.", 'definately', 'definitely'))
+
+
+####Repeating with functions######
+
+#This code uses a while loop to simulate going into different rooms.
+#while True:
+    #choice = input("Would you like to go into the green room or the blue room?\n")
+    #if choice == 'green':
+        #print("You are in the green room.")
+    #elif choice == 'blue':
+        #print("You are in the blue room.")
+    #else:
+       # print("I don't know what that is.")
+
+
+#If we want to write this code without any loops we can use functions inside of functions to recall a function!
+def blue_room():
+    print("You are in the blue room.")
+    choose_room()#remember, we want the code to repeat indefinitley.
+
+def green_room():
+    print("You are in the blue room.")
+    choose_room()
+
+def choose_room():
+    choice = input("Would you like to go to the green room or the blue room?\n").lower()
+    if "green" in choice:
+        green_room()
+    elif "blue" in choice:
+        blue_room()
+    else:
+        print("I don't understand.")
+        choose_room()
+
+#choose_room()
+
+
+###This function uses the find method to find instances of "_" 
+# and return whatever is between those instances
+
+def extract_place_find(filename):
+    first = filename.find("_") #locates the first "_" and stores it in 
+    # the variable "first"
+    partial = filename[first + 1:] #This stores everything after the 
+    #the "first" variable.
+    second = partial.find("_") #finds the second "_" in "partial"
+
+    return partial[:second] #returns "partial" up to the second "_"
+
+
+#print(extract_place_find("2016-11-04_Berlin_09/42/22.jpg"))
+#print(extract_place_find("2018-01-03_Oahu_21/51/57.jpg"))
+#print(extract_place_find("2018-01_Scottland_11/51/27.jpg"))
+
+
+
+
+###This function uses the split method to split the components
+#of a complicated photo name into a list of seperate parts.
+#We are looking to return only the name of the place the photo
+#was taken.
+
+def extract_place_split(filename):
+    parts = filename.split("_")#we want to seperate the place, so we split off the characters 
+    #surrounding the name of the place.
+    #print(parts)
+    place_name = parts[1]
+    return place_name
+
+# Here are some calls you can test it with:
+#print(extract_place_split("2016-11-04_Berlin_09/42/22.jpg"))
+#print(extract_place_split("2018-01-03_Oahu_21/51/57.jpg"))
+#print(extract_place_split("2018-01_Scottland_11/51/27.jpg"))
+
+
+
+#This is a shorter version that i cant explain yet.
+def short_extract(filename):
+    return filename.split("_")[1]
+
+print(short_extract("2016-11-04_Berlin_09/42/22.jpg"))
+#print(short_extract("2018-01-03_Oahu_21/51/57.jpg"))
+#print(short_extract("2018-01_Scottland_11/51/27.jpg"))
